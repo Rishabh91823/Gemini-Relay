@@ -1,9 +1,5 @@
 # Gemini Relay
-
-*A real-time chat app, originating from a Class 10th ICT project, now enhanced with a Google Gemini AI chatbot. Built with Node.js and Socket.IO, this project showcases growth from a basic app to an intelligent, modern platform.*
-
 ![Gemini Relay Demo](./public/images/screenshot.png)
-*(Note: You will need to add a screenshot of your app to your project folder and update the path above)*
 
 ---
 ## ✨ Core Features
