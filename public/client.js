@@ -18,10 +18,13 @@ textarea.addEventListener('keyup', (e) => {
 
 function sendMessage(message) {
     let msg = {
-        user: name, // Add the user's name to the message object
+        user: name,
         message: message.trim()
     };
-    // Send the message to the server
+
+    appendMessage(msg, 'outgoing_msg');
+    scrollToBottom();
+
     socket.emit('message', msg);
     textarea.value = '';
 }
@@ -47,9 +50,13 @@ function appendNotification(message) {
     scrollToBottom();
 }
 
+socket.on('welcome-message', (msg) => {
+    appendMessage(msg, 'incoming_msg');
+    scrollToBottom();
+});
+
 socket.on('message', (msg) => {
-    let messageType = (msg.user === name) ? 'outgoing_msg' : 'incoming_msg';
-    appendMessage(msg, messageType);
+    appendMessage(msg, 'incoming_msg');
     scrollToBottom();
 });
 
