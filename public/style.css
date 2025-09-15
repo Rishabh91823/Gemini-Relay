@@ -1,0 +1,97 @@
+.main{
+    margin:auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    width:100%;
+    font-family:'Segoe UI';
+    overflow:hidden;
+    height:100%;
+    background: linear-gradient(to left, #2193b0, #6dd5ed);
+    border-radius: 10px;
+}
+header{
+    padding:10px;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.title h2{
+    padding:30px 1-px;
+    font-size: 28px;
+    letter-spacing: 3px;
+    color: white;
+}
+.title img{
+    width: 100px;
+}
+.message_container {
+    width: 100%;
+    height: 70%;
+    padding: 5px;
+}
+.chatarea {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-bottom: 15px;
+    box-shadow: 0px 11px 20px -7px grey;
+    padding: 10px;
+}
+.user_join {
+text-align: center;
+width: 60%;
+margin: auto;
+padding: 5px;
+border-radius: 20px;
+background-color: #dbdbdb;
+margin-top: 10px;
+margin-bottom: 30px;
+}
+.outgoing_msg {
+background-color: #dfdddd;
+width: max-content;
+max-width: 40%;
+padding: 10px 20px;
+margin-top: 10px;
+margin-left: auto;
+border-radius: 20px;
+margin-right: 10px;
+}
+.incoming_msg{
+width: max-content;
+max-width: 40%;
+padding: 10px 0;
+margin-top: 10px;
+margin-left: 10px;
+border-radius: 20px;
+}
+.incoming_msg p{
+background-color:#15a1c4;
+width: 100%;
+padding: 10px;
+padding-left: 10px; 
+border-radius: 20px;
+color: white;
+}
+.incoming_msg h5{
+color: #868585; 
+padding-left: 10px;
+}
+.chat_box{
+    padding:0 5px;
+}
+textarea{
+    width:100%;
+    border-radius:5px;
+    padding:5px;
+}
+@media screen and (max-width: 1200px){
+    .main{
+        width:80%;
+    }
+    .title h2 {
+        font-size:20px;
+    }
+}

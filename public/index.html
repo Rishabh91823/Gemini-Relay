@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main">
+        <header class="title">
+            <img src="images/logo.png">
+            <h2>Node chat App</h2>
+        </header>
+    <div class="message_container">
+        <div class="chatarea" id="texts">
+            <div class="outgoing_msg">
+            </div>
+            <div class="incoming_msg">
+            </div>
+        </div>
+    </div>
+    <div class="chatbox">
+        <textarea id="chat_box" cols="80" rows="2"
+        placeholder="Enter your text here"></textarea>
+    </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+</body>
+</html>
