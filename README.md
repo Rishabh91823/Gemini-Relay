@@ -1,5 +1,5 @@
 # Gemini Relay
-![Gemini Relay Demo](./public/images/screenshot.png)
+![Gemini Relay Demo](./public/images/Screenshot.png)
 
 ---
 ## ✨ Core Features
